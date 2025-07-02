@@ -2,8 +2,6 @@
 
 ![Demo App](/frontend/public/screenshot-for-readme.png)
 
-About This Course:
-
 - 🚀 Project Setup
 - 🗄️ MongoDB & Redis Integration
 - 💳 Stripe Payment Setup

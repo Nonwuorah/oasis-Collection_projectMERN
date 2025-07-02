@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import path from "path";
 
-
 // Importing routes
 // Note: Ensure that the path to auth.route.js is correct based on your project structure.
 // If you're using a different file structure, adjust the import path accordingly.
@@ -24,7 +23,7 @@ const ___dirname = path.resolve();
 
 // authentication
 
-app.use(express.json({ limit: "10mb"})); // Middleware to parse JSON bodies
+app.use(express.json({ limit: "10mb" })); // Middleware to parse JSON bodies
 app.use(cookieParser()); // Middleware to parse cookies
 
 app.use("/api/auth", authRoutes);
@@ -34,16 +33,15 @@ app.use("/api/coupons", couponRoutes);
 app.use("/api/payments", paymentRoutes);
 app.use("/api/analytics", analyticsRoutes);
 
-if(process.env.NODE_ENV === "production") {
+if (process.env.NODE_ENV === "production") {
   // Serve static files from the React app
   app.use(express.static(path.join(___dirname, "../frontend/dist")));
 
   // Handle React routing, return all requests to React app
-  app.get("*", (req, res) => {
+  app.get("/", (req, res) => {
     res.sendFile(path.join(___dirname, "../frontend/dist/index.html"));
   });
 }
-
 
 app.listen(PORT, async () => {
   console.log("Server is running on http://localhost:" + PORT);
@@ -51,5 +49,3 @@ app.listen(PORT, async () => {
   // Connect to the database
   connectDB();
 });
-
-
