@@ -126,6 +126,32 @@ export const getProductsByCategory = async (req, res) => {
 	}
 };
 
+export const getAllCategoriesProducts = async (req, res) => {
+  try {
+    // Check if all products are cached in Redis
+    let allProducts = await redis.get("all_categories_products");
+    if (allProducts) {
+      return res.json({ products: JSON.parse(allProducts) });
+    }
+
+    // If not in cache, fetch all products from MongoDB
+    const products = await Product.find({}).lean();
+
+    // Cache the results for future requests (cache for 1 hour)
+    await redis.set(
+      "all_categories_products",
+      JSON.stringify(products),
+      "EX",
+      3600
+    );
+
+    res.json({ products });
+  } catch (error) {
+    console.log("Error in getAllCategoriesProducts controller", error.message);
+    res.status(500).json({ message: "Server error", error: error.message });
+  }
+};
+
 export const toggleFeaturedProduct = async (req, res) => {
 	try {
 		const product = await Product.findById(req.params.id);
