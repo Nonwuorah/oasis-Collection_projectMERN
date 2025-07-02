@@ -35,11 +35,11 @@ app.use("/api/analytics", analyticsRoutes);
 
 if (process.env.NODE_ENV === "production") {
   // Serve static files from the React app
-  app.use(express.static(path.join(___dirname, "../frontend/dist")));
+  app.use(express.static(path.join(___dirname, "./frontend/dist")));
 
   // Handle React routing, return all requests to React app
   app.get("/", (req, res) => {
-    res.sendFile(path.join(___dirname, "../frontend/dist/index.html"));
+    res.sendFile(path.join(___dirname, "./frontend/dist/index.html"));
   });
 }
 
