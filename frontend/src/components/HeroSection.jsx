@@ -41,7 +41,7 @@ const slides = [
       "https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg",
     primaryButton: {
       text: "Shop Summer",
-      link: "/category/t-shirts",
+      link: "/category/clothes",
       icon: ShoppingBag,
     },
     secondaryButton: {

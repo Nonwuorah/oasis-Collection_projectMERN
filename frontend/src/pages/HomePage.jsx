@@ -8,7 +8,7 @@ const categories = [
   { href: "/all", name: "All Categories", imageUrl: "https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg", },
   { href: "/womens", name: "Womens", imageUrl: "/womens.png" },
   { href: "/jeans", name: "Jeans", imageUrl: "/jeans.jpg" },
-  { href: "/t-shirts", name: "T-shirts", imageUrl: "/tshirts.jpg" },
+  { href: "/clothes", name: "Clothes", imageUrl: "/tshirts.jpg" },
   { href: "/shoes", name: "Shoes", imageUrl: "/shoes.jpg" },
   { href: "/glasses", name: "Glasses", imageUrl: "/glasses.png" },
   { href: "/jackets", name: "Jackets", imageUrl: "/jackets.jpg" },
