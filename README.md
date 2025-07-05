@@ -1,6 +1,6 @@
 <h1 align="center">E-Commerce Store 🛒</h1>
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+![Demo App](/frontend/public/Screenshot2025.png)
 
 - 🚀 Project Setup
 - 🗄️ MongoDB & Redis Integration
