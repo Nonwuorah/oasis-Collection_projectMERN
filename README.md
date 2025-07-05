@@ -53,3 +53,14 @@ npm run build
 ```shell
 npm run start
 ```
+
+![Tech Stack](/frontend/public/1_Oasis-Collection-E-Commerce-Application-Tech-Stack-Proposal.png)
+![Tech Stack](/frontend/public/2_Project-Goals-and-Architecture.png)
+![Tech Stack](/frontend/public/3_Frontend-Framework-React.png)
+![Tech Stack](/frontend/public/4_Enhanced-Frontend-Libraries.png)
+![Tech Stack](/frontend/public/5_State-Management-and-Data-Handling.png)
+![Tech Stack](/frontend/public/6_Styling-and-Responsive-Design.png)
+![Tech Stack](/frontend/public/7_Backend-Core-Expressjs.png)
+![Tech Stack](/frontend/public/8_Security-Authentication-and-Sessions.png)
+![Tech Stack](/frontend/public/9_Data-Media-and-Payments-Integration.png)
+![Tech Stack](/frontend/public/10_Summary-and-Next-Steps.png)

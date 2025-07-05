@@ -5,7 +5,7 @@ import FeaturedProducts from "../components/FeaturedProducts";
 import HeroSection from "../components/HeroSection";
 
 const categories = [
-  { href: "/all", name: "All Categories", imageUrl: "https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg", },
+  { href: "/all", name: "All Categories", imageUrl: "/all-categories.jpg" },
   { href: "/womens", name: "Womens", imageUrl: "/oasis-womens.JPG" },
   { href: "/jeans", name: "Jeans", imageUrl: "/jeans.jpg" },
   { href: "/clothes", name: "Clothes", imageUrl: "/tshirts.jpg" },
